@@ -41,22 +41,14 @@ const showAlert =(message,type)=>{
   return (
     <>
    {/* <Router> */}
-    <Navbar title="Textutils" about="about" mode={mode} toggleMode={toggleMode}/>
+    <Navbar title="Textutils"  mode={mode} toggleMode={toggleMode}/>
  <Alert alert={alert} />
  <div className="container my-3"> 
-  
- {/* <Routes>
-    <Route path="/about" element={<About/>}>
-  
-    </Route> */}
+  {/* <Routes>  */}
+ {/* <Route path="/about" element={<About/>}></Route>  */}
 
+<TextForm showAlert={showAlert} heading="Try TextUtils-Word counter,Character Counter,Remove Extra spaces" mode={mode}/></div>
 
-<TextForm showAlert={showAlert} heading="Enter the text to analyze below " mode={mode}/>
-
-
- {/* </Routes> */}
- </div>
- {/* </Router> */}
  </>
       );
   }
