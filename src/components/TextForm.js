@@ -86,7 +86,7 @@ Remove Extra Spaces
       <div className="container" style={{color:props.mode==='dark'? 'white':'#042743'}}>
         <h2>Your text summary</h2>
         <p>
-         <b> {text.split(" ").filter((element)=>( element.length!==0)).length} 
+         <b> {text.split(/\s+/).filter((element)=>( element.length!==0)).length} 
           </b>words and <b>{text.length}</b> charcter
         </p>
         <p><b>{0.008 * text.split(" ").filter((element)=>( element.length!==0)).length}</b>Minutes read</p>
